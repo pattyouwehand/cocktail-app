@@ -18,7 +18,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-image: url('./img/banner')
+  background-image: url('./img/banner');
+  padding: 0px;
+  margin: 0 px;
 }
 
 .App-title{
@@ -37,4 +39,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav{
+  background-color: black;
+  width: 100%;
+}
+
+ul, li{
+  list-style: none;
+  color: white;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 20px;
+
 }

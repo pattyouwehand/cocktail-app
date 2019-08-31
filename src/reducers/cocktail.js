@@ -1,10 +1,10 @@
 import {SHOW_CATEGORIES} from '../actions/getCocktailCategories'
 
-const initialStete = {
+const initialState = {
   payload: {}
 }
 
-export default (state = initialStete, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case SHOW_CATEGORIES:
       return{
