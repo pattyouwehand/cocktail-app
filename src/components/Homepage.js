@@ -12,8 +12,8 @@ export default class Homepage extends React.Component {
         <div className="Homepage">
           <header className="App-header">
             <h1 className="App-title">COCKTAIL LOVERS</h1>   
+            <Navbar />
           </header>
-          <Navbar />
           <main>
             <p className="App-intro">
               <CocktailContainer />

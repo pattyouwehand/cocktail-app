@@ -15,7 +15,7 @@ export function getCocktailCategories(){
     request('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink')
     .then(response => {
       console.log('RESPONSE:', response)
-      const cocktailCategory = response.body.message
+      const cocktailCategory = response.body.drinks
       dispatch(showCategories({
         cocktailCategory
       }))

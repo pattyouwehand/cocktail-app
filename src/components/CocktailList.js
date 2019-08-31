@@ -1,13 +1,15 @@
 import * as React from 'react'
 
-export default class CocktailList extends React.Component {
+export default function CocktailList(props) {
 
-  render(){
     return(
       <div>
         <h1>COCKTAIL CATEGORIES</h1>
+        <ul>
+          {props.cocktails.map(cocktail => 
+            <li key={cocktail.id}>{cocktail.id}</li>)}
+        </ul>
       
       </div>
     )
   }
-}
