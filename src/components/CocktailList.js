@@ -1,11 +1,13 @@
 import * as React from 'react'
 
-export default function CocktailList(props) {
+export default class CocktailList extends React.Component {
 
-  return(
-    <div>
-      <h1>COCKTAIL CATEGORIES</h1>
+  render(){
+    return(
+      <div>
+        <h1>COCKTAIL CATEGORIES</h1>
       
-    </div>
-  )
+      </div>
+    )
+  }
 }

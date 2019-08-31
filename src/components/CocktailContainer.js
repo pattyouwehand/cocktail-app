@@ -12,8 +12,8 @@ class CocktailContainer extends React.Component {
 
 
   render(){
-    if(!this.state.cockatils) return 'Loading cocktails...'
-    return <CocktailList cocktails={this.state.cockatils} />
+    if(!this.state.cocktails) return 'Loading cocktails...'
+    return <CocktailList cocktails={this.state.cocktails} />
   }
 }
 
@@ -22,5 +22,6 @@ const mapStateToProps = (state) => {
     cocktails: state.cocktails
   }
 }
+
 
 export default connect(mapStateToProps, {getCocktailCategories})(CocktailContainer)
