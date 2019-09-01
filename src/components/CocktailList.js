@@ -6,10 +6,10 @@ export default function CocktailList(props) {
       <div>
         <h1>COCKTAIL CATEGORIES</h1>
         <ul>
-          {props.cocktails.map(cocktail => 
-            <li key={cocktail.id}>{cocktail.id}</li>)}
+          {props.cocktails.map((cocktail) => {
+            return <li key={cocktail.drink}>{cocktail.drink}
+          </li>})}
         </ul>
-      
       </div>
     )
   }

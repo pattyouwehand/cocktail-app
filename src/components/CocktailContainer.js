@@ -13,13 +13,13 @@ class CocktailContainer extends React.Component {
 
   render(){
     if(!this.state.cocktails) return 'Loading cocktails...'
-    return <CocktailList cocktails={this.state.cocktails} />
+    return <CocktailList cocktails={this.props.cocktails} />
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-    cocktails: state.cocktails
+    cocktails: state.cocktail.payload.cocktailCategory
   }
 }
 
